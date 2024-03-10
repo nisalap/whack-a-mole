@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Joti+One');
+
+.center {
+    border: 5px solid;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+.container {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    left: '50%';
+    /* width: 50%;
+    max-width: 300px; */
+}
+
+.overlay-start {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* You can also add width and height if needed */
+}
+
+.overlay-finish {
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    transform: translate(-0%, -50%);
+}
+
+.overlay-mole {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.animated-mole {
+    position: absolute;
+    animation: reveal 0.1s;
+  }
+  
+@keyframes reveal {
+0% {
+    /* bottom: -100px; */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transform: translate(-50%, -0%);
+}
+25% {
+    /* bottom: -100px; */
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+    transform: translate(-50%, -13%);
+}
+50% {
+    /* bottom: -100px; */
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+    transform: translate(-50%, -25%);
+}
+75% {
+    /* bottom: -100px; */
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+    transform: translate(-50%, -37%);
+}
+100% {
+    /* bottom: -100px; */
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+    transform: translate(-50%, -50%);
+}
+}
